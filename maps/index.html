@@ -11,6 +11,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
     <link rel="stylesheet" href="../assets/css/styles.min.css">
+<script>
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw3143Ida_6A0cz6Mb9y_1QudZst7Lc5kbgrabryyyjQH_G_Jc02bb9/exec'
+
+            const form = document.forms['google-sheet']
+
+          
+
+            form.addEventListener('submit', e => {
+
+              e.preventDefault()
+
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+
+                .catch(error => console.error('Error!', error.message))
+
+            })
+
+          </script>
+
+
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body class="background-color: #373737;" style="height: 100%;background-color: rgb(55,55,55);">
